@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>首頁</title>
+    <title>陣列方法</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="images/favicon.ico" rel="shortcut icon">
     <meta charset="UTF-8">
@@ -42,17 +42,112 @@
     <div class="container my-5">
       <div class="row">
         
+          <div class="col-md-3">
+            
+<div>
+  <h6 class="text-capitalize text-muted">es6</h6>
+  
+    
+      <a href="/es6/let_const.html"  class="btn btn-block btn-link">
+        let, const 基礎教學
+      </a>
+    
+  
+    
+      <a href="/es6/spread_operator.html"  class="btn btn-block btn-link">
+        展開與其餘
+      </a>
+    
+  
+    
+      <a href="/es6/destructuring.html"  class="btn btn-block btn-link">
+        解構賦值
+      </a>
+    
+  
+    
+      <a href="/es6/shorthand.html"  class="btn btn-block btn-link">
+        縮寫
+      </a>
+    
+  
+    
+      <a href="/es6/arrow_function.html"  class="btn btn-block btn-link">
+        箭頭函式與傳統函式之差異
+      </a>
+    
+  
+    
+      <a href="/es6/template_string.html"  class="btn btn-block btn-link">
+        Template String
+      </a>
+    
+  
+    
+      <a href="/es6/array_function.html"  class="btn btn-block btn-primary active">
+        陣列方法
+      </a>
+    
+  
+</div>
+          </div>
+        
         <div class="col-md-9 post">      
           <!-- 練習開始 -->
-          <h1 class="mt-0 text-muted">首頁</h1>
+          <h1 class="mt-0 text-muted">陣列方法</h1>
           
 <div class="alert alert-secondary">
-  <p class="mb-0">Vue 練習手冊，請同學搭配課程完成本練習，<br>  <a href="/basic/dev.html" class="alert-link">練習開始</a>。</p>
-
+  <ol class="mb-0">
+    <li>請跟隨課程完成此章節。</li>
+  </ol>
 </div>
 
 
- 
+<script>
+// #1 樣板字串
+// 將以下改寫成 Template String 寫法
+const people = [
+  {
+    name: '小明',
+    money: 500
+  },
+  {
+    name: '漂亮阿姨',
+    money: 3000
+  },
+  {
+    name: '杰倫',
+    money: 60000
+  },
+  {
+    name: '老媽',
+    money: Infinity
+  }
+];
+
+// forEach 與 map
+// 將所有物件增加 icash 有多少金額的欄位
+
+
+// filter
+// 挑出金額少於 5000 的物件
+
+// find
+// 1. 找到金額 = 500 的物件
+// 2. 找到 > 5000 的物件
+
+// every
+// 1. 所有物件是否都超過 10000 元
+// 2. 是否所有物件超過 300 元
+
+// some
+// 1. 是否有物件超過 10000 元
+// 2. 是否有物件持有金額少於 300元
+
+// reduce
+// 去除掉老媽，請問剩下的人有多少錢？
+
+</script> 
         </div>
       </div>
     </div>

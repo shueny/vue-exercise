@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>首頁</title>
+    <title>let, const ES6 基礎教學</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="images/favicon.ico" rel="shortcut icon">
     <meta charset="UTF-8">
@@ -42,17 +42,118 @@
     <div class="container my-5">
       <div class="row">
         
+          <div class="col-md-3">
+            
+<div>
+  <h6 class="text-capitalize text-muted">es6</h6>
+  
+    
+      <a href="/es6/let_const.html"  class="btn btn-block btn-primary active">
+        let, const 基礎教學
+      </a>
+    
+  
+    
+      <a href="/es6/spread_operator.html"  class="btn btn-block btn-link">
+        展開與其餘
+      </a>
+    
+  
+    
+      <a href="/es6/destructuring.html"  class="btn btn-block btn-link">
+        解構賦值
+      </a>
+    
+  
+    
+      <a href="/es6/shorthand.html"  class="btn btn-block btn-link">
+        縮寫
+      </a>
+    
+  
+    
+      <a href="/es6/arrow_function.html"  class="btn btn-block btn-link">
+        箭頭函式與傳統函式之差異
+      </a>
+    
+  
+    
+      <a href="/es6/template_string.html"  class="btn btn-block btn-link">
+        Template String
+      </a>
+    
+  
+    
+      <a href="/es6/array_function.html"  class="btn btn-block btn-link">
+        陣列方法
+      </a>
+    
+  
+</div>
+          </div>
+        
         <div class="col-md-9 post">      
           <!-- 練習開始 -->
-          <h1 class="mt-0 text-muted">首頁</h1>
+          <h1 class="mt-0 text-muted">let, const ES6 基礎教學</h1>
           
 <div class="alert alert-secondary">
-  <p class="mb-0">Vue 練習手冊，請同學搭配課程完成本練習，<br>  <a href="/basic/dev.html" class="alert-link">練習開始</a>。</p>
-
+  <ol class="mb-0">
+    <li>請跟隨課程完成此章節。</li>
+  </ol>
 </div>
 
 
- 
+<script>
+// #1
+// 修改 var -> let
+var mom = '老媽';
+(function () {
+  console.log(mom);
+})();
+
+// #2
+// 修改 var -> let
+// function varMing () {
+//   var ming = '小明';
+//   if (true) {
+//     var ming = '杰哥';  
+//     // 這裡的 ming 依然是外層的小明，所以小明即將被取代
+//   }
+//   console.log(ming);  // '杰哥'
+// }
+
+
+// #3
+// 修改 var -> let
+// for (var i = 0; i < 10; i++) {
+//   console.log(i);
+//   setTimeout(function () {
+//     console.log('這執行第' + i + '次');
+//   }, 10);
+// }
+
+// #4
+// const
+// const ming = '鐵錚錚男子漢';
+
+// #5
+// const 與 物件
+// const family = {
+//   mom: '老媽',
+//   me: '小明',
+//   sister: '小橙'
+// };
+// family.father = '爸爸';
+
+// #6
+// 額外問題，不使用 let，上述答案如何解答
+// for (var i = 0; i < 10; i++) {
+//   console.log(i);
+//   setTimeout(function () {
+//     console.log('這執行第' + i + '次');
+//   }, 10);
+// }
+</script> 
         </div>
       </div>
     </div>
